@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#gameArea {
+  background-image: url(../images/background_game.gif);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.platform {
+  position: absolute;
+  width: 200px;
+  height: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.platform img {
+  width: 206.8px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+#player {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+#player img {
+  width: 50px;
+  height: 72.5px;
+}
