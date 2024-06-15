@@ -1,6 +1,7 @@
 const player = document.getElementById('player');
 const gameArea = document.getElementById('gameArea');
 const platforms = document.getElementsByClassName('platform');
+const ground = document.getElementById('ground');
 let playerSpeed = 7;
 let jumpHeight = 21;
 let gravity = 1;
@@ -10,7 +11,7 @@ let velocityY = 0;
 let keys = {};
 
 // Inicialização da posição do jogador
-const groundHeight = 55; // Altura do chão a partir do elemento ground
+const groundHeight = ground.clientHeight; // Altura do chão a partir do elemento ground
 player.style.left = '200px';
 player.style.top = (gameArea.clientHeight - groundHeight - player.clientHeight) + 'px';
 
