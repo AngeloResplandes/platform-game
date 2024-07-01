@@ -44,6 +44,11 @@ function gameLoop() {
   player.style.left = newLeft + 'px';
 
   // Pulo
+  if (keys['w'] && !isJumping) {
+    isJumping = true;
+    velocityY = -jumpHeight;
+  }
+
   if (keys[' '] && !isJumping) {
     isJumping = true;
     velocityY = -jumpHeight;
